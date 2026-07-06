@@ -27,6 +27,7 @@
 #' # setup simulation parameters
 #' year <- "2018"
 #' setup_level <- "daily"
+#' phi_input <- 0.8
 #' dist.type <- "P" 
 #' n.iter <-250
 #' dpw <- 1
@@ -46,6 +47,9 @@
 #' 		         NA_type,
 #' 		         nS,
 #' 		        year)
+#' 		        
+#' summary(results$ls_sim) 
+#'  		        
 #' }
 #'
 #' @export
@@ -1950,10 +1954,12 @@ if(length(year)==1){
 
 ls_sim_out <- vector()
 for (iter in 1:n.iter){
-  ls_sim_out[iter] <- sim_out[[iter]][[1]][["lifespan"]][["lifespan"]]
+  ls_sim_out[iter] <- output[[iter]][[1]][["lifespan"]][["lifespan"]]
 }
 
-return(ls_sim_out)
+return(list(ls_sim = ls_sim_out,
+            sim_models = output))
+
 }
 
 

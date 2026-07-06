@@ -39,7 +39,7 @@ simulation(
 \item{year, }{year to simulate}
 }
 \value{
-List of the output for each iteration of the simulation.
+Vector containing the lifespan estimate for each simulation iteration.
 }
 \description{
 Simulation code to be used to assess biases in model output. Associated with number of days sampled per week or number of sites sampled.

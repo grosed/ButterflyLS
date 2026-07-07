@@ -52,6 +52,7 @@ library(ButterflyLifespan)
 # setup simulation parameters
 year <- "2018"
 setup_level <- "daily"
+phi_input <- 0.8
 dist.type <- "P" 
 n.iter <-250
 dpw <- 1
@@ -71,6 +72,9 @@ results <- simulation(setup_level,
 		         NA_type,
 		         nS,
 		        year)
+		        
+summary(results$ls_sim) 		        
+		        
 }
 
 }

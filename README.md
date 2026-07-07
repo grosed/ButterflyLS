@@ -2,7 +2,7 @@
 
 ## Description
 
-This R package provides methods and data to enable reproduction of the results presented in "Estimation of adult butterfly longevity using long-term citizen-science count data" (Clarke, Dennis and McCrea 2026)
+This R package provides methods and data to enable reproduction of the results presented in "Estimation of adult butterfly lidespan using long-term citizen-science count data" (Clarke, Dennis, Morgan, Grose and McCrea 2026)
 
 ## Installing the package
 
